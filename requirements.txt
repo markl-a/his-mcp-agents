@@ -1,4 +1,4 @@
-mcp>=1.2
+mcp>=1.2,<2   # FastMCP API; mcp 2.x renamed it to MCPServer
 langgraph>=0.2
 pytest>=8
 # optional: anthropic
