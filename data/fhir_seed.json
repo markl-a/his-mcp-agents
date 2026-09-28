@@ -1,0 +1,33 @@
+{
+  "Patient": [
+    {"id": "p001", "name": "王小明", "national_id": "A123456789", "birthDate": "1948-03-02", "gender": "male"},
+    {"id": "p002", "name": "陳美華", "national_id": "B223456781", "birthDate": "1956-11-20", "gender": "female"},
+    {"id": "p003", "name": "林大同", "national_id": "C123987654", "birthDate": "1971-07-15", "gender": "male"}
+  ],
+  "Encounter": [
+    {"id": "e101", "patient": "p001", "date": "2026-09-10", "type": "outpatient", "department": "cardiology", "reason": "chest tightness on exertion"},
+    {"id": "e102", "patient": "p001", "date": "2026-09-20", "type": "outpatient", "department": "cardiology", "reason": "follow-up after ECG"},
+    {"id": "e201", "patient": "p002", "date": "2026-09-18", "type": "inpatient", "department": "nephrology", "reason": "worsening kidney function"},
+    {"id": "e301", "patient": "p003", "date": "2026-09-22", "type": "outpatient", "department": "family medicine", "reason": "routine check"}
+  ],
+  "Observation": [
+    {"id": "o1", "patient": "p001", "code": "LDL-C", "value": 172, "unit": "mg/dL", "ref_high": 130, "date": "2026-09-10"},
+    {"id": "o2", "patient": "p001", "code": "SBP", "value": 158, "unit": "mmHg", "ref_high": 140, "date": "2026-09-20"},
+    {"id": "o3", "patient": "p001", "code": "HbA1c", "value": 6.1, "unit": "%", "ref_high": 6.5, "date": "2026-09-10"},
+    {"id": "o4", "patient": "p002", "code": "eGFR", "value": 28, "unit": "mL/min/1.73m2", "ref_low": 60, "date": "2026-09-18"},
+    {"id": "o5", "patient": "p002", "code": "K", "value": 5.8, "unit": "mmol/L", "ref_high": 5.1, "date": "2026-09-18"},
+    {"id": "o6", "patient": "p003", "code": "LDL-C", "value": 118, "unit": "mg/dL", "ref_high": 130, "date": "2026-09-22"}
+  ],
+  "Condition": [
+    {"id": "c1", "patient": "p001", "code": "I10", "text": "essential hypertension"},
+    {"id": "c2", "patient": "p001", "code": "E78.5", "text": "hyperlipidemia"},
+    {"id": "c3", "patient": "p002", "code": "N18.4", "text": "chronic kidney disease stage 4"},
+    {"id": "c4", "patient": "p002", "code": "I10", "text": "essential hypertension"}
+  ],
+  "MedicationRequest": [
+    {"id": "m1", "patient": "p001", "drug": "amlodipine", "dose": "5 mg qd", "status": "active"},
+    {"id": "m2", "patient": "p001", "drug": "clarithromycin", "dose": "500 mg bid", "status": "active"},
+    {"id": "m3", "patient": "p002", "drug": "spironolactone", "dose": "25 mg qd", "status": "active"},
+    {"id": "m4", "patient": "p002", "drug": "lisinopril", "dose": "10 mg qd", "status": "active"}
+  ]
+}

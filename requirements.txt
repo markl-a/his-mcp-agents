@@ -1,0 +1,4 @@
+mcp>=1.2
+langgraph>=0.2
+pytest>=8
+# optional: anthropic
